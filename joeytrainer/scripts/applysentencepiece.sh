@@ -11,7 +11,7 @@ vocab_name=$5 #the name of the sentencepiece model as used in the sentencepiece.
 
 mkdir -p $spdatadir
 
-for item in JW JWLf Lafand; do
+for item in JW; do
 	data="${datadir}/${item}"
 	wdir=${spdatadir}/${vocab_name}/${item}
 	mkdir -p $wdir
